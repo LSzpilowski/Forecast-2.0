@@ -16,48 +16,55 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="Weather">
-        <form>
-          <div class="row">
-            <div class="col-9">
-              <input
-                type="search"
-                placeholder="Enter city name..."
-                class="form-control search-input"
-              />
+    <div class="app">
+      <div class="container">
+        <div class="weather">
+          <form class="form-class">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter city name..."
+                  class="form-control search-input"
+                  id="search-city"
+                />
+              </div>
+              <div class="col-3 p-0">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  id="button"
+                  value="Search"
+                />
+              </div>
             </div>
-            <div class="col-3 p-0">
-              <input
-                type="submit"
-                class="btn btn-primary w-100"
-                value="Search"
-              />
-            </div>
-          </div>
-        </form>
-        <div class="WeatherInfo"></div>
-        <div class="WeatherForecast row">
-          <div class="row">
-            <div class="col-6">
-              <h1>Legnica</h1>
-              <ul>
-                <li>
-                  <span> Monday, 14:55 </span>
-                  , clear sky
-                </li>
-                <li>
-                  Humidity <strong>67 %</strong> , Wind:
-                  <strong>12.07 km/h</strong>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md6 col-sm-8">
-              <div class="temperature-container d-flex justify-content-end">
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" />
-                <div>
-                  <span class="temperature">6</span>
-                  <span class="unit">°C</span>
+          </form>
+          <div class="weather-info">
+            <div id="fucking-row">
+              <div class="display-weather-data">
+                <h1 id="city-name">Legnica</h1>
+                <ul class="list">
+                  <li>
+                    <span id="display-date"> Monday, 14:55</span>,
+                    <span>clear sky</span>
+                  </li>
+                  <li>
+                    Humidity <span id="humidity">67</span><strong>%</strong>,
+                    Wind: <span id="wind">12.07</span><strong> km/h</strong>
+                  </li>
+                </ul>
+              </div>
+              <div class="display-weather-icon-temp">
+                <div class="display-icon">
+                  <img
+                    class="display-image"
+                    src="https://openweathermap.org/img/wn/10d@2x.png"
+                  />
+
+                  <span class="display-temp-unit">
+                    <span class="temperature">6</span>
+                    <span class="unit">°C</span>
+                  </span>
                 </div>
               </div>
             </div>

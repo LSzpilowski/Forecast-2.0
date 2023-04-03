@@ -1,0 +1,106 @@
+/* Styling for main boxes */
+html, body {
+  background-color: #F9F7FE;
+}
+.app {
+  margin: auto;
+background-color: #F9F7FE;
+}
+.container{
+  margin: 0px 45px 0px 45px;
+  padding: 0px 12px 0px 12px;
+  
+}
+.weather {
+  max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: white;
+    /* border: 3px solid green; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px rgb(0 0 0 / 20%);
+}
+
+/* Styling for Search Engine */
+.form-class {
+  margin: 10px 15px 10px 5px;
+}
+#search-city{
+  background-color: #f9f7fe;
+  border: none;
+}
+#search-city:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #d3d6db;
+}
+    #button:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+
+
+    /* Styling for Weather Info - Middle Row */
+
+.weather-info {
+  margin: 0 20px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+}
+.display-weather-data {
+  margin: auto;
+}
+
+
+.list {
+  opacity: 0.6;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#humidity {
+  font-weight: bolder;
+  color: red;
+}
+
+strong {
+  font-weight: bolder;
+  color: red;
+}
+
+#fucking-row {
+  --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.row {
+  display: block;
+}
+.display-weather-data{
+  
+  margin: 0 auto 0 10px;
+}
+.display-weather-icon-temp {
+  margin: 0 10px 0 auto;
+}
+.display-icon {
+  position: relative;
+    top: -10px;
+
+}
+
+.display-temp-unit {
+  font-size: 75px;
+  position: relative;
+  bottom: -20px;
+}
+
+
+
+
+
+
+    /* Styling for Weather Forecast - Bottom Row */
