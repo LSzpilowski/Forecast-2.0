@@ -1,107 +1,255 @@
-/* Styling for main boxes */
-html, body {
-  background-color: #F9F7FE;
+html,
+body {
+  background-color: #f7f1e5;
 }
-.app {
+
+.weather-box {
+  width: 700px;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: white;
+  /* border: 3px solid green; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+}
+
+
+.row {
+  display: flex;
+  margin: 5px auto;
+  /* border: 1px solid green; */
+}
+
+.col {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
+
+.top-one {
+  font-size: 20px;
+}
+
+.form-format {
+  font-size: 20px;
+}
+
+#typed-city {
+  font-size: 20px;
+}
+
+#use-current-location {
+  font-size: 20px;
+}
+
+
+
+
+.middle-one {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.middle-one-CiHuWi {
   margin: auto;
-background-color: #F9F7FE;
-}
-.container{
-  margin: 0px 45px 0px 45px;
-  padding: 0px 12px 0px 12px;
-  
-}
-.weather {
-  max-width: 800px;
-    margin: 50px auto;
-    padding: 10px;
-    background-color: white;
-    /* border: 3px solid green; */
-    border-radius: 10px;
-    box-shadow: 0px 0px 100px rgb(0 0 0 / 20%);
 }
 
-/* Styling for Search Engine */
-.form-class {
-  margin: 10px 15px 10px 5px;
+#middle-one-city {
+  font-size: 40px;
+  margin: 0 auto;
 }
-#search-city{
-  background-color: #f9f7fe;
-  border: none;
-  width: auto;
-}
-#search-city:hover {
-    opacity: 1;
-    cursor: pointer;
-    background-color: #d3d6db;
-}
-    #button:hover {
-      opacity: 0.7;
-      cursor: pointer;
-    }
 
-
-
-    /* Styling for Weather Info - Middle Row */
-
-.weather-info {
-  margin: 0 20px;
-  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
-}
-.display-weather-data {
+.middle-one-temp-CF {
   margin: auto;
 }
 
+.middle-one-emoji {
+  margin: auto;
+}
 
-.list {
-  opacity: 0.6;
+.temperature {
+  margin: auto;
+  font-size: 80px;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.higher-C {
+  margin-bottom: 0 0 20px 0;
+}
+
+.middle-one-CF {
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button-change-temp {}
+
+/* .celsius {
+  text-decoration: none;
+}
+.farenheit{
+  text-decoration: none;
+} */
+
+.middle-one-date-day-hour {
+  margin: auto;
+  text-align: center;
+}
+
+
+
+
+/* .bottom-one {
+} */
+.bottom-one-HuWi {
+  margin: auto;
+  font-size: 18px;
+}
+
+/* Od Zuzanki */
+.weatherApp {
+  margin: 30px 30px 0px 30px;
+  padding: 15px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+}
+
+.container1 {
+  max-width: 900px;
+}
+
+.container2 {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
-#humidity {
-  font-weight: bolder;
-  color: red;
+
+.container3 {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
-strong {
-  font-weight: bolder;
-  color: red;
+.mainTemperature {
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+  list-style-type: none;
 }
 
-#fucking-row {
-  --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
+#main-emoji {
+  width: 160px;
+  height: 160px;
 }
-.row {
-  display: block;
-}
-.display-weather-data{
-  
-  margin: 0 auto 0 10px;
-}
-.display-weather-icon-temp {
-  margin: 0 10px 0 auto;
-}
-.display-icon {
+
+.units {
   position: relative;
-    top: -10px;
-
+  margin: auto;
+  font-size: 20px;
+  top: -40px;
 }
 
-.display-temp-unit {
-  font-size: 75px;
-  position: relative;
-  bottom: -20px;
+.active {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+
+#weather-conditions {
+  text-align: left;
+}
+
+button {
+  text-align: right;
+  background-color: rgb(61, 52, 194);
+  color: white;
+  border: none;
+  padding: 2% auto;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  background-color: rgb(173, 219, 240);
+  color: rgb(40, 40, 133);
+}
+
+.col-2 {
+  margin: auto;
+}
+
+.weatherForecastDay {
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.emoji {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.weatherForecastTemperature {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#forecastMinTemp {
+  opacity: 0.7;
+}
+
+footer {
+  padding: 0 auto;
+  margin: 10px 30px 10px 30px;
 }
 
 
-
-
-
-
-    /* Styling for Weather Forecast - Bottom Row */
+/* Here's CSS for bottom one sector (7 days prediction) */
+/* .week-day-1,
+.week-day-2,
+.week-day-3,
+.week-day-4,
+.week-day-5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.day-temp-1,
+.day-temp-2,
+.day-temp-3,
+.day-temp-4,
+.day-temp-5 {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.night-temp-1,
+.night-temp-2,
+.night-temp-3,
+.night-temp-4,
+.night-temp-5 {
+  font-weight: lighter;
+}
+.weather-icon-1,
+.weather-icon-2,
+.weather-icon-3,
+.weather-icon-4,
+.weather-icon-5 {
+  font-size: 40px;
+} */
