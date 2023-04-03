@@ -21,15 +21,16 @@
         <div class="weather">
           <form class="form-class">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Enter city name..."
                   class="form-control search-input"
-                  id="search-city"
+                  id="type-city-name"
+                  autocomplete="none;"
                 />
               </div>
-              <div class="col-3 p-0">
+              <div class="col-2">
                 <input
                   type="submit"
                   class="btn btn-primary w-100"
@@ -37,6 +38,15 @@
                   value="Search"
                 />
               </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  class="btn btn-primary w-100"
+                  id="button"
+                  value="Find current location"
+                />
+              </div>
+              <div class="current-location-button"></div>
             </div>
           </form>
           <div class="weather-info">
@@ -60,7 +70,6 @@
                     class="display-image"
                     src="https://openweathermap.org/img/wn/10d@2x.png"
                   />
-
                   <span class="display-temp-unit">
                     <span class="temperature">6</span>
                     <span class="unit">°C</span>

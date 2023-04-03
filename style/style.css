@@ -28,6 +28,7 @@ background-color: #F9F7FE;
 #search-city{
   background-color: #f9f7fe;
   border: none;
+  width: auto;
 }
 #search-city:hover {
     opacity: 1;
