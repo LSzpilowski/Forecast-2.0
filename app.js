@@ -41,7 +41,6 @@ let weatherIcon = response.data.condition.icon_url;
 mainEmoji.setAttribute("src", `${weatherIcon}`);
 
 formateDate();
-
 getForecast(response.data.coordinates);
 
 
