@@ -222,6 +222,21 @@ footer {
 }
 
 
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-forecast-date {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temp {
+  font-size: 20px;
+}
+#min-temp {
+  opacity: 0.6;
+}
 /* Here's CSS for bottom one sector (7 days prediction) */
 /* .week-day-1,
 .week-day-2,
