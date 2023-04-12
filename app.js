@@ -40,11 +40,42 @@ function displayData(response) {
 let weatherIcon = response.data.condition.icon_url;
 mainEmoji.setAttribute("src", `${weatherIcon}`);
 
+
+let img = document.body.style.backgroundImage;
+
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png`) 
+{ img = document.body.style.backgroundImage = "url('images/clear-sky.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/cloudy.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/scattered-clouds.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/broken-clouds.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/shower-rain.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/rain.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-dnightpng`)
+{  img = document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/snow-footprints.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png`)
+{ img = document.body.style.backgroundImage = "url('images/mist.jpg')";
+}
+
+
+
 formateDate();
 getForecast(response.data.coordinates);
-
-
-  }
+}
 
 let formFormat = document.querySelector(".form-format");
 formFormat.addEventListener("submit", changeCity);
@@ -168,8 +199,42 @@ hourBox.innerHTML = `${currentHour}:${currentMinutes}`;
     changePressure.innerHTML = `${pressure}`;
 
 let mainEmoji = document.querySelector("#main-emoji");
-let weatherIcon = response.data.condition.icon;
-mainEmoji.setAttribute("src", `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${weatherIcon}.png`);
+let weatherIcon2 = response.data.condition.icon;
+mainEmoji.setAttribute("src", `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${weatherIcon2}.png`);
+
+
+
+let weatherIcon = response.data.condition.icon_url;
+let img = document.body.style.backgroundImage;
+
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png`) 
+{ img = document.body.style.backgroundImage = "url('images/clear-sky.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/cloudy.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/scattered-clouds.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/broken-clouds.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/shower-rain.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/rain.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-dnightpng`)
+{  img = document.body.style.backgroundImage = "url('images/thunderstorm.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-night.png`)
+{  img = document.body.style.backgroundImage = "url('images/snow-footprints.jpg')";
+} 
+if (weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png` || weatherIcon === `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png`)
+{ img = document.body.style.backgroundImage = "url('images/mist.jpg')";
+}
+
 
 formateDate();
 getForecast(response.data.coordinates);

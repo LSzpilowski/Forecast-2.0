@@ -4,18 +4,62 @@ html {
 }
 
 body {
-  background-color: #f7f1e5;
+  background-color: black;
+  background: url("../images/clear-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .weather-box {
   width: 700px;
-  margin: 50px auto;
+  margin: 140px auto;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
+  
 }
 
+/* if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png") {
+  img=document.body.style.backgroundImage="url('images/clear-sky.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png") {
+  img=document.body.style.backgroundImage="url('images/cloudy.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png") {
+  img=document.body.style.backgroundImage="url('images/scattered-clouds.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png") {
+  img=document.body.style.backgroundImage="url('images/broken-clouds.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/shower-rain-day.png") {
+  img=document.body.style.backgroundImage="url('images/shower-rain.jpg')";
+}
+
+else if(weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png") {
+  img=document.body.style.backgroundImage="url('images/rain.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/thunderstorm-day.png") {
+  img=document.body.style.backgroundImage="url('images/thunderstorm.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/snow-day.png") {
+  img=document.body.style.backgroundImage="url('images/snow-footprints.jpg')";
+}
+
+else if (weatherIcon="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png") {
+  img=document.body.style.backgroundImage="url('images/mist.jpg')";
+}
+
+else {
+  img=document.body.style.backgroundImage="url('images/happy.jpg')";
+} */
 
 .row {
   display: flex;
